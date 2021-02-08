@@ -6,8 +6,7 @@ body{
 }
 
 .everything {
-  /* border: 2px solid rgb(0, 144, 32);
-  background-color: rgba(0, 144, 32, 0.59); */
+  /* border: 2px solid rgb(0, 144, 32);*/
   width: 90%;
   margin: 0 auto;
   max-width: 1000px;
