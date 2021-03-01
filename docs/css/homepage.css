@@ -1,98 +1,198 @@
+/* Use cmmd/ to make things a comment or type in these bad boys-> */
+
 body{
-  margin: 130px 0 0 0;
-  font-family: verdana, arial, sans-serif;
-  font-size: 1em;
-/*   background-color: rgba(15, 106, 0, 0.31) */
+  /* margin: 130px 0 0 0; */
+  font-family: georgia, garamond, serif;
+  font-size: 14px;
+  background-color: white;
+  /* background-color: rgba(15, 106, 0, 0.31) */
 }
 
-.everything {
-  /* border: 2px solid rgb(0, 144, 32);*/
-  width: 90%;
+
+main {
+  width: 80%;
+  top: 0px;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
+  background-color: rgb(50, 135, 57);
+  margin-top: 296px;
+  padding-top: 2rem;
 }
+
+nav {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  /* margin:0; */
+  width: 100%;
+  font-size:.7rem;
+}
+  nav ul {
+    list-style-type: none;
+    background-color: rgb(98, 189, 106);
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    }
+  nav ul li a {
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    color:black;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  nav ul li:hover {
+    background-color: rgb(72, 175, 81);
+  }
+  nav ul li ul li a {
+    text-decoration: none;
+  }
+  nav li ul li a {
+    padding: .3rem 1.5rem;
+    font-size: .7rem;
+    text-align: left;
+  }
+  li ul {
+    display:none;
+  }
+  nav ul li:hover ul {
+    display:flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 700px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    nav ul li a {
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul li {
+      flex: 0 0 6rem;
+      position: relative;
+    }
+    li ul li a {
+      padding: .3rem 1.3rem;
+      font-size: .7rem;
+      text-align: left;
+    }
+    nav ul li ul li {
+      flex: 0 1 auto;
+      width: 6rem;
+    }
+  }
 
 
 h1 {
   font-family: "Apple Chancery", cursive;
-  font-size: 3.5em;
+  font-size: 1.5em;
   text-align: center;
-  /* border-bottom: 2px dotted rgb(102, 0, 0); */
   margin: 0px;
-  padding: 10px;
-  /* background-color: rgba(3, 171, 80, 0.51); */
-  background-image: linear-gradient(rgb(15, 106, 0), rgba(15, 106, 0, 0.36));
+  padding: 5px;
+  background-color: rgb(72, 175, 81);
   position:fixed;
   top: 0px;
-  width: 100%
+  left: 0;
+  width: 100%;
 }
 
+h1 a {
+  color: black;
+}
 
-h2{
+/* h1 {
+  font-size: 4rem;
+  font-family: "Apple Chancery", cursive;
+  text-align: center;
+  margin-bottom: 1rem;
+} */
+
+/* h2{
   font-family: verdana, arial, sans-serif;
   font-style: italic;
   font-size: 1.8em;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
+  color: red;
+} */
+
+a.gotoplay {
+  text-decoration: none;
 }
 
-img {
 
+img {
   width: 80%;
   max-width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-style: verdana, arial, sans-serif;
+  margin-bottom: 25px;
   font-size: 0.9em;
+}
+
+.text {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 p {
   line-height: 1.6;
   text-align:justify;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  margin: 25px;
   padding: 10px;
+  /* padding: 15px; */
   /* background-color: rgba(150, 182, 180, 1); */
+  background-color: rgb(98, 189, 106);
 }
 
-
-ul {
+.bullets {
   list-style-position: inside;
   line-height: 1.6;
-  background-color: rgba(150, 182, 180, 1);
+  /* background-color: white; */
+  margin: 25px;
   padding: 10px;
+  background-color: rgb(98, 189, 106);
 }
 
-.box {
-  background-color: rgba(150, 182, 180, 1);
+/* .box {
+  background-color: white;
 }
 
 .outline {
-  border: 2px dotted rgba(150, 182, 180, 1);
-}
+  background-color: white;
+} */
 
-.cover {
+/* .cover {
   float:right;
   width: 48%;
-}
+} */
 
-.intro {
+/* .intro {
   padding: 0 30px;
   line-height: 1.6;
   width: 48%;
-}
+} */
 
-@media screen and (max-width:800px) {
-.cover {
-  float: none;
-  width: auto;
-}
-.intro {
-  width: auto;
-}
-.everything {
-  margin-top: 109px;
-}
+@media screen and (min-width:700px) {
+  .cover {
+  float: right;
+  width: 50%;
+  }
+  .text {
+  float: left;
+  width: 50%;
+  }
+  p {
+  text-align: left;
+  }
+  main {
+  margin-top: 85px;
+  }
 }
