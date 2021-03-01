@@ -1,0 +1,285 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  font-size:14px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: georgia, garamond, serif;
+  font-size: 1rem;
+  background-color: rgb(50, 135, 57);
+}
+
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size:.7rem;
+}
+
+  nav ul {
+    list-style-type: none;
+    background-color: rgb(98, 189, 106);
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    color:black;
+    font-size: 0.7rem;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(72, 175, 81);
+  }
+
+  nav ul li ul li a {
+    text-decoration: none;
+  }
+
+  li ul li a {
+    padding: .3rem 1.5rem;
+    font-size: .7rem;
+  }
+
+  li ul {
+    display:none;
+  }
+
+  nav ul li:hover ul {
+    display:flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 700px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    nav ul li a {
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul li {
+      flex: 0 0 6rem;
+      position: relative;
+    }
+    nav li ul li a {
+      padding: .3rem 1.3rem;
+      font-size: .7rem;
+      text-align: left;
+    }
+    nav ul li ul li {
+      flex: 0 1 auto;
+      width: 6rem;
+    }
+  }
+
+.takemeup {
+  position: fixed;
+  bottom: -0.5rem;
+  right: 0;
+  font-size: 2rem;
+  background-color: rgb(98, 189, 106);
+  border: none;
+  width: 4rem;
+  text-align: center;
+}
+
+.takemeup a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  width: 65%;
+  max-width: 800px;
+  margin:0 auto;
+  background-color:white;
+  padding:240px 2rem 2rem 2rem;
+}
+
+.everything {
+  width: 100%;
+}
+
+.playtitle {
+  font-size: 4rem;
+  font-family: "Apple Chancery", cursive;
+  text-align: center;
+  top: 0px;
+}
+
+section.dramatis {
+  padding-bottom: 1rem;
+}
+
+section.play {
+
+}
+
+section.contents {
+
+}
+
+img {
+  display: block;
+  width:100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dramatis-img {
+  display: block;
+  width:90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.act-img {
+  display: block;
+  width:65%;
+  margin:0 auto;
+}
+
+h1 a, h2 a {
+  position: relative;
+  top: -246px;
+}
+
+h1.act {
+  font-size: 3.5rem;
+  font-family: "Apple Chancery", cursive;
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 2px solid rgb(13, 162, 0);
+  padding-top: 1rem;
+}
+
+h2.firstscene {
+  font-size: 1.5rem;
+  margin: 1rem -28px;
+  padding: 1rem 100px;
+  background-color: rgb(72, 175, 81);
+}
+
+h2.scene {
+  font-size: 1.5rem;
+  margin: 1rem -28px;
+  padding: 1rem 100px;
+  background-color: rgb(72, 175, 81);
+}
+
+/* span.Scene {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: rgb(72, 175, 81);
+} */
+
+p.character {
+  font-size: 1.1rem;
+  color: rgb(11, 134, 0);
+  font-weight: bold;
+  margin: 0.8rem 0 0.5rem 0;
+}
+
+h1.dramatishead {
+  font-size: 1.5rem;
+  margin: 1rem -28px;
+  padding: 1rem 100px;
+  background-color: rgb(72, 175, 81);
+}
+
+p.dramatischaracter {
+ line-height: 2rem;
+ text-indent: -20px;
+}
+
+span.character-role {
+  color: rgb(11, 134, 0);
+  /* line-height: 1.4rem; */
+  font-style: italic;
+
+}
+
+h2.location {
+  font-size: 1.1em;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h2.play-location {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 8px;
+}
+
+h2.stagedirection {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: right;
+  margin: 0.8rem 0;
+  color: rgb(11, 134, 0);
+  font-weight: normal;
+  /* max-width: 50%; */
+}
+
+span.stage_directions_inline {
+  font-style: italic;
+  color: rgb(11, 134, 0);
+}
+
+p.verseline {
+  margin: 0 0 0 100px;
+  margin-bottom: 6px;
+  text-indent: -20px;
+  line-height: 1.3rem;
+}
+
+p.prose {
+  margin: 0 0 0 100px;
+  margin-bottom: 6px;
+  text-indent: -20px;
+  line-height: 1.3rem;
+}
+
+
+@media screen and (min-width: 700px) {
+  .everything {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  main {
+  padding:50px 2rem 2rem 2rem;
+  }
+  h1 a, h2 a {
+    top: -52px;
+  }
+  /* .dramatis-info {
+    width: 50%;
+    float: left;
+  }
+  .dramatis-img {
+    width: 50%;
+    float: right;
+  } */
+}
