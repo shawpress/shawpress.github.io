@@ -195,4 +195,8 @@ p {
   main {
   margin-top: 85px;
   }
+  .bullets {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
