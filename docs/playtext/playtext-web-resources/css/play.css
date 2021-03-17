@@ -1,4 +1,4 @@
-html {
+/* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background: #fff;
@@ -186,14 +186,6 @@ h2.scene {
   background-color: rgb(72, 175, 81);
 }
 
-/* span.Scene {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem 0.5rem;
-  background-color: rgb(72, 175, 81);
-} */
-
 p.character {
   font-size: 1.1rem;
   color: rgb(11, 134, 0);
@@ -215,7 +207,6 @@ p.dramatischaracter {
 
 span.character-role {
   color: rgb(11, 134, 0);
-  /* line-height: 1.4rem; */
   font-style: italic;
 
 }
@@ -240,7 +231,6 @@ h2.stagedirection {
   margin: 0.8rem 0;
   color: rgb(11, 134, 0);
   font-weight: normal;
-  /* max-width: 50%; */
 }
 
 span.stage_directions_inline {
@@ -273,13 +263,4 @@ p.prose {
   }
   h1 a, h2 a {
     top: -52px;
-  }
-  /* .dramatis-info {
-    width: 50%;
-    float: left;
-  }
-  .dramatis-img {
-    width: 50%;
-    float: right;
   } */
-}
