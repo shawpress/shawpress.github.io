@@ -12,79 +12,11 @@ body{
 main {
   width: 80%;
   top: 0px;
-  margin: 0 auto;
   max-width: 900px;
   background-color: rgb(50, 135, 57);
-  margin-top: 296px;
-  padding-top: 2rem;
+  margin: 40px auto 0 auto;
+  padding-top: 1rem;
 }
-
-nav {
-  display: block;
-  position: fixed;
-  top: 30px;
-  left: 0;
-  /* margin:0; */
-  width: 100%;
-  font-size:.7rem;
-}
-  nav ul {
-    list-style-type: none;
-    background-color: rgb(98, 189, 106);
-    display:flex;
-    flex-direction: column;
-    text-align: left;
-    }
-  nav ul li a {
-    text-decoration: none;
-    padding: .8rem 1rem;
-    display: block;
-    color:black;
-    font-size: 0.7rem;
-    text-align: center;
-  }
-  nav ul li:hover {
-    background-color: rgb(72, 175, 81);
-  }
-  nav ul li ul li a {
-    text-decoration: none;
-  }
-  nav li ul li a {
-    padding: .3rem 1.5rem;
-    font-size: .7rem;
-    text-align: left;
-  }
-  li ul {
-    display:none;
-  }
-  nav ul li:hover ul {
-    display:flex;
-    flex-direction: column;
-  }
-  @media screen and (min-width: 700px) {
-    nav ul {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    nav ul li a {
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav ul li {
-      flex: 0 0 6rem;
-      position: relative;
-    }
-    li ul li a {
-      padding: .3rem 1.3rem;
-      font-size: .7rem;
-      text-align: left;
-    }
-    nav ul li ul li {
-      flex: 0 1 auto;
-      width: 6rem;
-    }
-  }
-
 
 h1 {
   font-family: "Apple Chancery", cursive;
@@ -186,14 +118,10 @@ p {
   width: 50%;
   }
   .text {
-  float: left;
   width: 50%;
   }
   p {
   text-align: left;
-  }
-  main {
-  margin-top: 85px;
   }
   .bullets {
     margin-top: 0;
