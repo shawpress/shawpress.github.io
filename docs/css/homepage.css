@@ -4,7 +4,8 @@ body{
   /* margin: 130px 0 0 0; */
   font-family: georgia, garamond, serif;
   font-size: 14px;
-  background-color: white;
+/*   background-color: white; */
+  background-color: red;
   /* background-color: rgba(15, 106, 0, 0.31) */
 }
 
